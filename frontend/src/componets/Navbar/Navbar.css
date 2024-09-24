@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* :root{
+   --primaryColor: hsl(199, 100%, 33%);
+   --SecondaryColor: hsl(187,85%, 43%);
+   --gradientColor: linear-gradient(to right, hsl(187, 85%,43%),hsl(199,100%, 33%));
+   --whiteColor:hsl(0,0%,100%);
+   --blackColor:hsl(201,33%,16%);
+   --textColor:hsl(240,4%,36%);
+   --whiteColorDeam:hsl(0,0%,93%);
+   --greyText:rgb(190,190,190);
+   --inputColor:rgb(239,239,239);
+   --bodyColor:rgb(240,240,246);
+   --cardBG:rgb(225,225,235);
+ 
+ } */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans', sans-serif;
+   
+   
+}
+
+body{
+    height: 100vh;
+    background-color: var(--whiteColorDeam);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+li{
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    color: var(--blackColor);
+    font-size: 1.2rem;
+}
+a:hover{
+    color: var(--primaryColor);
+    
+   
+}
+
+/* Header */
+header{
+    position: relative;
+    padding: 0 2rem;
+    box-shadow: 0 2px 4px var( --header-box-shadow);
+    
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+
+}
+
+.logo{
+   text-decoration: none;
+   color: var(--blackColor);
+}
+
+ .navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+ }
+
+ .icon-1{
+   color: var(--primaryColor);
+   margin-top: -25px;
+ }
+
+ .navbar .links{
+    display: flex;
+    gap: 4rem; 
+    color: var(--blackColor);
+    font-size: 1.2rem;
+    
+
+    a:hover{
+      color: var(--primaryColor);  
+  }
+ }
+
+
+ .cart-icon .dot{
+      color: var(--whiteColor);
+      border: 1px solid var(--blackColor);
+      background-color: var(--primaryColor);
+      text-align: center;
+      height: 21px;
+      width: 20px;
+      position: absolute;
+      font-weight: 600;
+      min-width: 10px;
+      min-height: 10px;
+      border-radius: 5px;
+      top: 8px;
+      margin-left: 85px;
+ }
+
+ .cart-icon p{
+   margin-left: 60px;
+   margin-bottom: 15px;
+   color: var(--blackColor);
+   font-size: 25px;
+
+
+   &:hover{
+      color: var(--primaryColor);
+   }
+ }
+
+ .action_btn{
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    padding: 0.5rem 0.7rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    margin-top: -8px;
+    margin-left: 60px;
+    /* font-weight: bold;  */
+    cursor: pointer;
+    text-decoration: none;
+    transition: scale 0.2 ease;
+ }
+
+ .action_btn:hover{
+    scale: 1.05;
+    color: var(--button-color);
+ }
+
+ .action_btn:active{
+    scale: 0.95;
+ }
+
+
+ /* button two */
+
+ .action_btn-1{
+   background-color: var(--primaryColor);
+   color: var(--whiteColor);
+   padding: 0.5rem 0.5rem;
+   border: none;
+   outline: none;
+   border-radius: 20px;
+   font-size: 1.1rem;
+   margin-top: -8px;
+   /* font-weight: bold; */
+   cursor: pointer;
+   text-decoration: none;
+   transition: scale 0.2 ease;
+}
+
+.action_btn-1:hover{
+   scale: 1.05;
+   color: var(--button-color);
+}
+
+.action_btn-1:active{
+   scale: 0.95;
+}
+
+
+ /* RESPONSIVE DESIGN */
+ @media (max-width: 869px) {
+   .navbar {
+     flex-direction: column;
+     align-items: flex-start;
+   }
+ 
+   .navbar .links,
+   .navbar .action_btn,
+   .navbar .action_btn-1 {
+     display: none;
+   }
+ 
+   .cart-icon {
+     margin-top: 10px;
+   }
+ }
+
+
+/* Profile container */
+.profile-container {
+   position: relative;
+   display: inline-block;
+   margin-left: 15px; /* Slight margin to space it out from other elements */
+ }
+ 
+ /* Profile icon with smooth transition */
+ .profile-icon {
+   font-size: 30px;
+   margin-top: -10px;
+   cursor: pointer;
+   color: #555; /* Neutral color */
+   transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+ }
+ 
+ .profile-icon:hover {
+   color: var(--primaryColor); /* Blue color on hover */
+   transform: scale(1.1); /* Slight zoom effect */
+ }
+ 
+ /* Dropdown menu styling */
+ .profile-dropdown {
+   position: absolute;
+   top: 40px; /* Space it slightly below the icon */
+   /* right: 0; */
+   background-color: white;
+   border-radius: 12px; /* Rounded corners for a modern look */
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow */
+   z-index: 1000;
+   min-width: 160px;
+   opacity: 0;
+   visibility: hidden;
+   transform: translateY(-10px);
+   transition: all 0.3s ease; /* Smooth dropdown appearance */
+ }
+ 
+ /* Show dropdown on hover */
+ .profile-container:hover .profile-dropdown {
+   opacity: 1;
+   visibility: visible;
+   transform: translateY(0); /* Smooth slide-down effect */
+ }
+ 
+ /* Dropdown list styles */
+ .profile-dropdown ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ /* Dropdown items with hover effect */
+ .profile-dropdown li {
+   padding: 10px 20px;
+   font-size: 14px; /* Consistent font size */
+   color: #333;
+   cursor: pointer;
+   display: flex;
+   align-items: center; /* Center the text vertically */
+   transition: background-color 0.3s ease, color 0.3s ease;
+ }
+ 
+ .profile-dropdown li:hover {
+   background-color: var( --primaryColor); /* Blue background on hover */
+   color: white; /* White text on hover */
+ }
+ 
+ /* Subtle left border to make it unique */
+ .profile-dropdown li::before {
+   content: '';
+   display: block;
+   width: 4px;
+   height: 0;
+   background-color: transparent;
+   margin-right: 10px;
+   transition: height 0.3s ease, background-color 0.3s ease;
+ }
+ 
+ .profile-dropdown li:hover::before {
+   height: 100%; /* Expand height on hover */
+   background-color: #0056b3; /* Darker blue for the border on hover */
+ }
+ 
+ /* Optional: Style links inside dropdown */
+ .profile-dropdown li a {
+   text-decoration: none;
+   color: inherit; /* Inherit color for link text */
+   display: block;
+   width: 100%;
+ }
+ 
+ /* Optional: Add a subtle divider between items */
+ .profile-dropdown li + li {
+   border-top: 1px solid #f1f1f1; /* Light divider between items */
+ }
+ 
+
+ /* Dropdown icon styling */
+.dropdown-icon {
+   margin-right: 10px; /* Space between icon and text */
+   font-size: 18px; /* Slightly smaller than the profile icon */
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+

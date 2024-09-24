@@ -1,0 +1,78 @@
+/* :root{
+    --primaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187,85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%,43%),hsl(199,100%, 33%));
+    --whiteColor:hsl(0,0%,100%);
+    --blackColor:hsl(201,33%,16%);
+    --textColor:hsl(240,4%,36%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --greyText:rgb(190,190,190);
+    --inputColor:rgb(239,239,239);
+    --bodyColor:rgb(240,240,246);
+    --cardBG:rgb(225,225,235);
+  
+  } */
+
+  .row{
+    margin-top: 30px;
+  }
+
+ .main-txt h1{
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+ } 
+
+.main-txt h1 span{
+    color: var(--SecondaryColor);
+}
+
+.packages .card{
+    width: 300px;
+    height: 440px;
+    border-radius: 5px;
+    border: none;
+    box-shadow:var( --package-cart-box-shadow) 0px 4px 12px;
+}
+
+.packages .card img{
+    border-radius: 5px;
+}
+
+.packages .card .card-body{
+    background: transparent;
+}
+
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.packages .card .card-body p{
+    font-size: 15px;
+}
+
+.checked{
+    color: var(--primaryColor);
+}
+
+.star i{
+    font-size: 15px;
+}
+
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+
+.packages .card .card-body .btu{
+    padding: 10px;
+    text-decoration: none;
+    color: var(--whiteColor);
+    border-radius: 5px;
+    
+}
+
+.btu{
+    background: var(--SecondaryColor);
+}
