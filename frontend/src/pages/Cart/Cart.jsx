@@ -13,6 +13,13 @@ const Cart = (props) => {
   useEffect(() => {
     console.log(cartItem);
   });
+  // cart data remove mate
+  const clearCart = () => {
+    // Assuming you have a function in your context to clear the cart items
+    Object.keys(cartItem).forEach(itemId => {
+      removecart(itemId);  // Remove each item from the cart
+    });
+  };
 
 const handleBooking = () => {
   const userId = sessionStorage.getItem('userId');
@@ -60,7 +67,20 @@ const handleBooking = () => {
           icon: 'success',
           title: 'Success!',
           text: 'Your booking has been created successfully!',
-        });
+        })
+        // cart data remove mate
+      .then(() => {
+        // Clear the cart and optionally refresh the page
+        clearCart(); // Function to reset cart data
+        // Optionally, you can refresh the page instead
+        // window.location.reload();
+      });
+
+
+      //  // Clear the cart items after successful booking
+      //  Object.keys(cartItem).forEach(itemId => removecart(itemId));
+
+
       } else {
         Swal.fire({
           icon: 'error',
