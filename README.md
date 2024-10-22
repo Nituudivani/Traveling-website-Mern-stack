@@ -1,4 +1,4 @@
-## Screenshots
+## ScreenShots
 
 ![App Screenshot](https://res.cloudinary.com/djkvcjvrs/image/upload/v1729568337/Traveling%20website/tiyozekmkskzoder4v0b.png)
 
