@@ -28,4 +28,4 @@
 
 ![App Screenshot](https://res.cloudinary.com/djkvcjvrs/image/upload/v1729570285/Traveling%20website/yxcs2214keblhm0x4ohw.png)
 
-![App Screenshot]()
+
