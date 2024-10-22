@@ -26,6 +26,5 @@
 
 ![App Screenshot](https://res.cloudinary.com/djkvcjvrs/image/upload/v1729570284/Traveling%20website/xczqkfb3o1p2xiierinh.png)
 
-![App Screenshot](https://res.cloudinary.com/djkvcjvrs/image/upload/v1729570285/Traveling%20website/yxcs2214keblhm0x4ohw.png)
 
 
