@@ -1,25 +1,46 @@
 # Traveling Website
 
-Welcome to the Traveling Website! This platform allows users to explore and book various travel destinations. 
+A feature-rich traveling website that allows users to book destinations securely. This application is designed with user authentication and a modern interface to enhance the user experience.
 
 ## Features
 
-- **User Authentication**: Users must log in to book any destinations. Unauthenticated users will have limited access to the site.
-  
-- **Destination Booking**: Browse through a variety of destinations and make bookings directly from the site.
+- **User Authentication**: 
+  - Users must log in to book any destination.
+  - Secure user authentication with AES encryption and decryption to protect sensitive data.
 
-- **SweetAlert Notifications**: User-friendly alerts for actions, including contact form submissions and booking confirmations, enhancing user experience.
+- **Booking System**:
+  - Users can search for and book various travel destinations.
+  - Each booking is tied to the authenticated user's profile.
 
-- **Contact Page**: Users can reach out through a contact form to inquire about bookings, travel packages, or support.
+- **Contact Us**:
+  - Users can reach out for support or inquiries through a contact form.
+  - SweetAlert is used to display messages upon submission.
 
-- **Responsive Design**: The website is designed to be  responsive, providing a seamless experience on both desktop and mobile devices.
+- **Password Reset**:
+  - Users can reset their passwords via email using Nodemailer.
+  - Secure and user-friendly password recovery process.
+
+- **User Interface**:
+  - Responsive and visually appealing design implemented with React Toastify for notifications and alerts.
+  - Easy navigation and intuitive user experience.
 
 ## Technologies Used
 
-- **Frontend**: React.js, 
-- **Backend**: Node.js, Express
-- **Database**: MongoDB
-- **User Interface**: SweetAlert for notifications
+- **Frontend**: 
+  - React.js
+  - React Router
+  - React Toastify
+  - SweetAlert
+
+- **Backend**:
+  - Node.js
+  - Express.js
+  - Nodemailer for email functionalities
+  - MongoDB for database storage
+  - Docker
+
+- **Encryption**:
+  - AES encryption and decryption for secure user data management.
 
 
 ## ScreenShots
