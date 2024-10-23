@@ -57,7 +57,6 @@ A feature-rich traveling website that allows users to book destinations securely
 
 - **Frontend**: 
   - React.js
-  - React Router
   - React Toastify
   - SweetAlert
 
